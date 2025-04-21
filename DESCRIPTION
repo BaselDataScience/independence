@@ -1,10 +1,11 @@
 Package: independence
 Type: Package
 Title: Fast Rank-Based Independence Testing
-Version: 1.0.1
-Date: 2020-10-23
-Authors@R: person("Chaim", "Even-Zohar", email = "chaim@ucdavis.edu", role = c("aut", "cre"))
-Maintainer: Chaim Even-Zohar <chaim@ucdavis.edu>
+Version: 1.0.1.9000
+Authors@R: c(
+    person("Chaim", "Even-Zohar", role = c("aut")),
+    person("Reinhold", "Koch", role = c("aut", "cre"))
+)
 Description: Performs three ranking-based nonparametric tests for the
                 independence of two continuous variables:
                 (1) the classical Hoeffding's D test;
