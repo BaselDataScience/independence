@@ -2,8 +2,8 @@
 % Please edit documentation in R/independence-package.R
 \docType{package}
 \name{independence}
+\alias{independence-package}
 \alias{independence}
-\alias{_PACKAGE}
 \alias{independence-test}
 \alias{dependence-test}
 \title{independence}

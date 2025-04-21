@@ -8,6 +8,11 @@
 
 using namespace Rcpp;
 
+#ifdef RCPP_USE_GLOBAL_ROSTREAM
+Rcpp::Rostream<true>&  Rcpp::Rcout = Rcpp::Rcpp_cout_get();
+Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
+#endif
+
 // max_taustar
 double max_taustar();
 static SEXP _independence_max_taustar_try() {
@@ -36,7 +41,7 @@ RcppExport SEXP _independence_max_taustar() {
     if (rcpp_isError_gen) {
         SEXP rcpp_msgSEXP_gen = Rf_asChar(rcpp_result_gen);
         UNPROTECT(1);
-        Rf_error(CHAR(rcpp_msgSEXP_gen));
+        Rf_error("%s", CHAR(rcpp_msgSEXP_gen));
     }
     UNPROTECT(1);
     return rcpp_result_gen;
@@ -69,7 +74,7 @@ RcppExport SEXP _independence_max_hoeffding() {
     if (rcpp_isError_gen) {
         SEXP rcpp_msgSEXP_gen = Rf_asChar(rcpp_result_gen);
         UNPROTECT(1);
-        Rf_error(CHAR(rcpp_msgSEXP_gen));
+        Rf_error("%s", CHAR(rcpp_msgSEXP_gen));
     }
     UNPROTECT(1);
     return rcpp_result_gen;
@@ -103,7 +108,7 @@ RcppExport SEXP _independence_calc_taustar(SEXP permSEXP) {
     if (rcpp_isError_gen) {
         SEXP rcpp_msgSEXP_gen = Rf_asChar(rcpp_result_gen);
         UNPROTECT(1);
-        Rf_error(CHAR(rcpp_msgSEXP_gen));
+        Rf_error("%s", CHAR(rcpp_msgSEXP_gen));
     }
     UNPROTECT(1);
     return rcpp_result_gen;
@@ -137,7 +142,7 @@ RcppExport SEXP _independence_calc_hoeffding(SEXP permSEXP) {
     if (rcpp_isError_gen) {
         SEXP rcpp_msgSEXP_gen = Rf_asChar(rcpp_result_gen);
         UNPROTECT(1);
-        Rf_error(CHAR(rcpp_msgSEXP_gen));
+        Rf_error("%s", CHAR(rcpp_msgSEXP_gen));
     }
     UNPROTECT(1);
     return rcpp_result_gen;
@@ -171,7 +176,7 @@ RcppExport SEXP _independence_calc_refined(SEXP permSEXP) {
     if (rcpp_isError_gen) {
         SEXP rcpp_msgSEXP_gen = Rf_asChar(rcpp_result_gen);
         UNPROTECT(1);
-        Rf_error(CHAR(rcpp_msgSEXP_gen));
+        Rf_error("%s", CHAR(rcpp_msgSEXP_gen));
     }
     UNPROTECT(1);
     return rcpp_result_gen;

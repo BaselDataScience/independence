@@ -163,5 +163,5 @@ max_hoeffding <- function() {
 
 # Register entry points for exported C++ functions
 methods::setLoadAction(function(ns) {
-    .Call('_independence_RcppExport_registerCCallable', PACKAGE = 'independence')
+    .Call(`_independence_RcppExport_registerCCallable`)
 })

@@ -4,8 +4,8 @@ Title: Fast Rank-Based Independence Testing
 Version: 1.0.1.9000
 Authors@R: c(
     person("Chaim", "Even-Zohar", role = c("aut")),
-    person("Reinhold", "Koch", role = c("aut", "cre"))
-)
+    person("Reinhold", "Koch", email = "rei@reinholdkoch.com", role = c("aut", "cre"))
+    )
 Description: Performs three ranking-based nonparametric tests for the
                 independence of two continuous variables:
                 (1) the classical Hoeffding's D test;
@@ -27,9 +27,5 @@ Imports: Rcpp (>= 1.0.5)
 LinkingTo: Rcpp
 Suggests: TauStar, testthat
 Encoding: UTF-8
-RoxygenNote: 7.1.1
+RoxygenNote: 7.3.2
 NeedsCompilation: yes
-Packaged: 2020-10-23 12:13:29 UTC; cevenzohar
-Author: Chaim Even-Zohar [aut, cre]
-Repository: CRAN
-Date/Publication: 2020-11-05 10:40:05 UTC
